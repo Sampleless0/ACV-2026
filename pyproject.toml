@@ -7,7 +7,9 @@ authors = [
     { name = "Sampleless0", email = "Sampleless0@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "datasets>=5.1.0",
+]
 
 [project.scripts]
 acv-2026 = "acv_2026:main"
