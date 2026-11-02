@@ -1,0 +1,33 @@
+PlantVillage Color — custom leaf-group-aware split audit
+Random seed: 42
+Target: 70% train / 15% validation / 15% test (approximate)
+Source: original teammate CSV + PlantVillage leaf-map.json
+Original teammate CSV: unchanged
+Images: unchanged; no files moved or downloaded
+Published train/test lists: NOT used to constrain custom splitting
+
+Total images: 54,284
+Classes: 38
+Unique groups: 20,565
+
+Final counts:
+  train: 37,989 (69.98%)
+  val: 8,164 (15.04%)
+  test: 8,131 (14.98%)
+
+Leaf metadata coverage:
+  mapped: 40,483 images
+  unmatched: 13,801 images
+  ambiguous: 0 images
+
+Cross-split group overlaps in ORIGINAL teammate CSV: 6,291
+Cross-split group overlaps in NEW CSV: 0
+All 38 classes represented in each new split: yes
+
+LIMITATION: Groups for unmatched/ambiguous images rely on normalized
+filenames; they cannot prove photos of the same physical leaf are
+always grouped. The metadata itself may contain inconsistencies.
+The test split must be held out from model selection and tuning.
+
+New CSV: C:\Users\euris\Documents\Projects\ACV-2026\data\splits\plantvillage_color_split_grouped.csv
+Per-class table: C:\Users\euris\Documents\Projects\ACV-2026\data\splits\split_per_class.csv
